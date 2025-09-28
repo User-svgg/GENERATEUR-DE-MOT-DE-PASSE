@@ -15,6 +15,11 @@ return randomChar
 function generate() {
     const length_val = parseInt(length.value)
 
+ if (isNaN(length_val) || length_val < 2 || length_val > 20) {
+        alert("Entre une valeur entre 2 et 20 !");
+        return;
+    }
+
     mdp = ""
     let i = 0
 
